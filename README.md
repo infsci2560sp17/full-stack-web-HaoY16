@@ -1,6 +1,24 @@
-# TODO : Your Project Name
+# What is the proposed name for your Web application?
 
-TODO : Please provide a detailed project description.
+Traveler Blogs
+
+# Who is the target audience for your Web application?
+
+Web application target audience are travelers all around the United States who like traveling and sharing their experiences.
+
+# What problem is it intended to solve for the target audience?
+
+Hundreds and even thousands of travelers travel around the world every day. But just few of them share their experience on web sites, and different people choose different platforms to post their photos or instructions for followers. Besides, there are such few web sites concentrating on location-based traveler blog which I intend to create it just for sharing photos, stories, instructions, recommendations and suggestions by travelers. I want to solve problems by searching all the information users need through the 'Traveler Blogs' sorted by location correlation.
+
+# How will it meet the minimum project requirements?
+
+My site will use the freemium model. Most of the content will be freely accessible without a login. If users want to interact with each other, a login will be required which I'll store in my database. I'll also support OAuth2 authentication if the users do not want to create an username and password on my site. Once the user is signed up for the site, every source is free for every user. But users can choose whether donate or not and I'll use Venmo for payments. All public data will be accessible through RESTful services. All RESTful services will data in both JSON and XML formats.
+
+# Why is your proposed Web application unique or creative beyond simply meeting the minimum requirements?
+
+My site will customize the experience to the users locations. I'll track site usage, interactions with others, and content viewed to provide a customized experience. And when I gather enough information, I'll create official best travel route and its best travel time for different kinds of travelers including different themes like culture and history, or best route to take photos. I'll engage active users with advice on how to advance their training. I'll engage inactive users by sending motivational messages encouraging them to join the community.
+
+
 
 ## Build status
 
@@ -9,7 +27,7 @@ TODO : Modify to match your project specific Travis Build
 
 ## Web Site
 
-TODO : Please provide a link to your web site ![](https://...)
+TODO : Please provide a link to your web site ![https://hidden-forest-34481.herokuapp.com/](https://hidden-forest-34481.herokuapp.com/)
 
 ## Key Features
 
