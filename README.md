@@ -23,11 +23,11 @@ My site will customize the experience to the users locations. I'll track site us
 ## Build status
 
 TODO : Modify to match your project specific Travis Build
-[![Build Status](https://travis-ci.org/infsci2560sp17/full-stack-web.svg?branch=master)](https://travis-ci.org/infsci2560sp17/full-stack-web)
+[![Build Status](https://travis-ci.org/infsci2560sp17/full-stack-web-HaoY16.svg?branch=master)](https://travis-ci.org/infsci2560sp17/full-stack-web-HaoY16)
 
 ## Web Site
 
-TODO : Please provide a link to your web site ![https://hidden-forest-34481.herokuapp.com/](https://hidden-forest-34481.herokuapp.com/)
+TODO : Please provide a link to your web site ![https://radiant-mesa-88066.herokuapp.com/](https://radiant-mesa-88066.herokuapp.com/)
 
 ## Key Features
 
