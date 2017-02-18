@@ -27,7 +27,7 @@ TODO : Modify to match your project specific Travis Build
 
 ## Web Site
 
-TODO : Please provide a link to your web site ![https://radiant-mesa-88066.herokuapp.com/](https://radiant-mesa-88066.herokuapp.com/)
+https://radiant-mesa-88066.herokuapp.com/
 
 ## Key Features
 
