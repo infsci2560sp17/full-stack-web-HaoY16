@@ -41,9 +41,9 @@ public class Blog {
         this.stateType = StateType.NY;
     }
 
-    public Blog(Long id, String title, StateType stateType) {
+    public Blog(Long id, String name, StateType stateType) {
         this.id = id;
-        this.title = title;
+        this.title = name;
         this.stateType = stateType;
     }
 
