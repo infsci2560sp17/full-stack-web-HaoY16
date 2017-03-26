@@ -26,7 +26,7 @@ public class FullStackWebApplication {
         BlogRepository repository = ctx.getBean(BlogRepository.class);
         repository.save(new Blog(1L, "Pittsburgh", StateType.PA));
         repository.save(new Blog(2L, "Boston", StateType.MA));
-        repository.save(new Blog(3L, "Amherst", StateType.MA));
+        repository.save(new Blog(3L, "LA", StateType.CA));
       
     }
 
