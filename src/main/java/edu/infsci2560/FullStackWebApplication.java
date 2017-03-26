@@ -10,7 +10,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
+//@ComponentScan({"edu.infsci2560.storage"})
++@ComponentScan({"edu.infsci2560"})
 @SpringBootApplication
 public class FullStackWebApplication {
 
@@ -22,6 +25,7 @@ public class FullStackWebApplication {
         BlogRepository repository = ctx.getBean(BlogRepository.class);
         repository.save(new Blog(1L, "Pittsburgh", StateType.PA));
         repository.save(new Blog(2L, "Boston", StateType.MA));
+        repository.save(new Blog(3L, "Amherst", StateType.MA));
       
     }
 
