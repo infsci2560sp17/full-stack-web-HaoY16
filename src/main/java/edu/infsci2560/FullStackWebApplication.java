@@ -12,9 +12,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
+@SpringBootApplication
 //@ComponentScan({"edu.infsci2560.storage"})
 @ComponentScan({"edu.infsci2560"})
-@SpringBootApplication
+
 public class FullStackWebApplication {
 
     private static final Logger log = LoggerFactory.getLogger(FullStackWebApplication.class);
