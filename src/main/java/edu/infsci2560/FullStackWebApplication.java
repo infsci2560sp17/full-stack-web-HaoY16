@@ -13,7 +13,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 //@ComponentScan({"edu.infsci2560.storage"})
-+@ComponentScan({"edu.infsci2560"})
+@ComponentScan({"edu.infsci2560"})
 @SpringBootApplication
 public class FullStackWebApplication {
 
