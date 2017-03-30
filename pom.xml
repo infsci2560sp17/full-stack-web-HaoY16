@@ -1,166 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    
-    <groupId>edu.infsci2560</groupId>
-    <artifactId>full-stack-web</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-
-    <name>full-stack-web</name>
-    <description>Full Stack Web Project for INFSCI2560</description>
-
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.2.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-test</artifactId>
-        </dependency>
-        <!--<dependency>
-                <groupId>org.springframework.session</groupId>
-                <artifactId>spring-session</artifactId>
-        </dependency>-->		
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>        		     
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <scope>test</scope>
-            <type>jar</type>
-        </dependency>
-        <dependency>
-            <groupId>com.jcabi</groupId>
-            <artifactId>jcabi-w3c</artifactId>
-            <version>1.3</version>
-        </dependency>
-        <dependency>
-            <groupId>com.jcabi</groupId>
-            <artifactId>jcabi-matchers</artifactId>
-            <version>1.3</version>
-        </dependency>  
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-core</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-library</artifactId>
-            <scope>test</scope>
-        </dependency>        
-        <dependency>
-            <groupId>com.jayway.jsonpath</groupId>
-            <artifactId>json-path</artifactId>            
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.jayway.jsonpath</groupId>
-            <artifactId>json-path-assert</artifactId>            
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>commons-dbcp</groupId>
-            <artifactId>commons-dbcp</artifactId>
-            <type>jar</type>
-        </dependency>
-    </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>integration-test</goal>
-                            <goal>verify</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>com.heroku.sdk</groupId>
-                <artifactId>heroku-maven-plugin</artifactId>
-                <version>1.1.2</version>
-            </plugin>
-            <plugin>
-                <groupId>com.cj.jshintmojo</groupId>
-                <artifactId>jshint-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>lint</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <version>2.4.3</version>
-                    <options>maxparams:3,indent,camelcase,eqeqeq,forin,immed,latedef,noarg,noempty,nonew</options>
-                    <globals>require,$</globals>
-                    <!--                    <configFile>src/main/resources/jshint.conf.js</configFile>-->
-                    <directories>
-                        <directory>src/main/resources/static/js</directory>
-                    </directories>
-                    <excludes>
-                        <exclude>src/main/resources/static/js/lib</exclude>
-                    </excludes>
-                    <reporter>jslint</reporter>
-                    <reportFile>target/jshint.xml</reportFile>
-                    <failOnError>true</failOnError>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-</project>
+2	<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+3		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+4		<modelVersion>4.0.0</modelVersion>
+5	
+6		<groupId>edu.infsci2560</groupId>
+7		<artifactId>full-stack-web</artifactId>
+8		<version>0.0.1-SNAPSHOT</version>
+9		<packaging>jar</packaging>
+10	
+11		<name>full-stack-web</name>
+12		<description>Full Stack Web Project for INFSCI2560</description>
+13	
+14		<parent>
+15			<groupId>org.springframework.boot</groupId>
+16			<artifactId>spring-boot-starter-parent</artifactId>
+17			<version>1.4.2.RELEASE</version>
+18			<relativePath/> <!-- lookup parent from repository -->
+19		</parent>
+20	
+21		<properties>
+22			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+23			<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+24			<java.version>1.8</java.version>
+25		</properties>
+26	
+27		<dependencies>
+28			<dependency>
+29				<groupId>org.springframework.boot</groupId>
+30				<artifactId>spring-boot-starter-actuator</artifactId>
+31			</dependency>
+32			<!--<dependency>
+33				<groupId>org.springframework.boot</groupId>
+34				<artifactId>spring-boot-starter-data-jpa</artifactId>
+35			</dependency>-->
+36			<dependency>
+37				<groupId>org.springframework.boot</groupId>
+38				<artifactId>spring-boot-starter-thymeleaf</artifactId>
+39			</dependency>
+40			<dependency>
+41				<groupId>org.springframework.boot</groupId>
+42				<artifactId>spring-boot-starter-security</artifactId>
+43			</dependency>
+44			<dependency>
+45				<groupId>org.springframework.security</groupId>
+46				<artifactId>spring-security-test</artifactId>
+47			</dependency>
+48			<!--<dependency>
+49				<groupId>org.springframework.session</groupId>
+50				<artifactId>spring-session</artifactId>
+51			</dependency>-->
+3 months ago @BrianKolowitz modify test	
+52			
+3 months ago @BrianKolowitz initial commit	
+53			<dependency>
+54				<groupId>org.springframework.boot</groupId>
+55				<artifactId>spring-boot-starter-web</artifactId>
+56			</dependency>
+57			
+58			<!--<dependency>
+59				<groupId>org.postgresql</groupId>
+60				<artifactId>postgresql</artifactId>
+61				<scope>runtime</scope>
+62			</dependency>-->
+3 months ago @BrianKolowitz modify test	
+63	
+3 months ago @BrianKolowitz initial commit	
+64			<dependency>
+65				<groupId>org.springframework.boot</groupId>
+66				<artifactId>spring-boot-starter-test</artifactId>
+67				<scope>test</scope>
+68			</dependency>
+69		 <dependency>
+70		  <groupId>commons-codec</groupId>
+71		  <artifactId>commons-codec</artifactId>
+72		  <version>1.6</version>
+73		  <scope>test</scope>
+74		  <type>jar</type>
+75		 </dependency>
+76		</dependencies>
+77	
+78		<build>
+79			<plugins>
+80				<plugin>
+81					<groupId>org.springframework.boot</groupId>
+82					<artifactId>spring-boot-maven-plugin</artifactId>
+83				</plugin>
+84				<plugin>
+85	                <artifactId>maven-failsafe-plugin</artifactId>
+86	                <executions>
+87	                    <execution>
+88	                        <goals>
+89	                            <goal>integration-test</goal>
+90	                            <goal>verify</goal>
+91	                        </goals>
+92	                    </execution>
+93	                </executions>
+94	            </plugin>
+95	            <plugin>
+96	                <groupId>com.heroku.sdk</groupId>
+97	                <artifactId>heroku-maven-plugin</artifactId>
+98	                <version>1.1.2</version>
+99	                <configuration>
+100	                <processTypes>
+101	                    <web>java $JAVA_OPTS -Dserver.port=$PORT -jar target/*.jar</web>
+102	                </processTypes>
+103	                </configuration>
+104	            </plugin>
+105			</plugins>
+106		</build>
+107	
+108	
+109	</project>
