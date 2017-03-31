@@ -26,7 +26,8 @@ public class Blog {
         DC,
         MA,
         PA,
-        CA
+        CA,
+        FL
     }
 
     @Id
