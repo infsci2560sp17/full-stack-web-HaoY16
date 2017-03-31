@@ -1,8 +1,13 @@
 package edu.infsci2560;
 
+import edu.infsci2560.models.Customer;
 import edu.infsci2560.models.Blog;
 import edu.infsci2560.models.Blog.StateType;
+import edu.infsci2560.models.Rating;
+import edu.infsci2560.models.RatingPk;
+import edu.infsci2560.repositories.CustomerRepository;
 import edu.infsci2560.repositories.BlogRepository;
+import edu.infsci2560.repositories.RatingRepository;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,10 +28,20 @@ public class FullStackWebApplication {
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(FullStackWebApplication.class, args);
 
-        BlogRepository repository = ctx.getBean(BlogRepository.class);
-        repository.save(new Blog(1L, "Pittsburgh", StateType.PA));
-        repository.save(new Blog(2L, "Boston", StateType.MA));
-        repository.save(new Blog(3L, "LA", StateType.CA));
+        BlogRepository blogRepo = ctx.getBean(BlogRepository.class);
+        blogRepo.save(new Blog(1L, "Pittsburgh", StateType.PA));
+        blogRepo.save(new Blog(2L, "Boston", StateType.MA));
+        blogRepo.save(new Blog(3L, "Orlando", StateType.FL));
+        
+        CustomerRepository customerRepo = ctx.getBean(CustomerRepository.class);
+        customerRepo.save(new Customer(1L, "Bill", "Smith"));
+        customerRepo.save(new Customer(2L, "Jane", "Doe"));
+        customerRepo.save(new Customer(3L, "Dr", "K"));
+        
+        RatingRepository ratingRepo = ctx.getBean(RatingRepository.class);
+        ratingRepo.save(new Rating(new RatingPk(1L, 1L), 3));
+        ratingRepo.save(new Rating(new RatingPk(2L, 1L), 2));
+        ratingRepo.save(new Rating(new RatingPk(1L, 2L), 4));
       
     }
 
