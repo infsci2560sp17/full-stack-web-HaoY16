@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Edit BLOG</title>
+    </head>
+    <body>
+        Edit BLOG<br />
+        <form data-th-action="@{/blogs/edit/{id}(id=${blog.id})}" data-th-object="${blog}" data-th-method="put" role="form">
+            Id: <span data-th-utext="${blog.id}" /><br />
+            Title: <input type="text" name="title" data-th-value="${blog.title}" /><br />
+            State Type:<br />
+            <div data-th-each="elem: ${T(edu.infsci2560.models.Blog.StateType).values()}">
+                <input type="PA" 
+                       data-th-name="stateType" 
+                       data-th-value="${elem.name()}" 
+                       data-th-checked="${elem} eq ${T(edu.infsci2560.models.Blog.StateType).valueOf(blog.stateType)}">
+                    <span data-th-utext="${elem.name()}" />
+                </input>
+            </div>
+            <input type="submit" value="Update State"/><br />
+        </form>
+                
+        <br />
+        <div>
+            <table style="border: 1px solid black">
+                <tr>
+                    <th>BLOG Id</th>
+                    <th>Customer Id</th>
+                    <th>stars</th>
+                </tr>                
+                <tr data-th-each="rating : ${ratings}">
+                    <td data-th-text="${rating.ratingPk.blogId}"></td>
+                    <td data-th-text="${rating.ratingPk.customerId}"></td>
+                    <td data-th-text="${rating.stars}"></td>
+                </tr>
+            </table>
+        </div>
+        
+    </body>
+</html>
