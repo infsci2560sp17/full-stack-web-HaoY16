@@ -17,6 +17,12 @@
                     <td data-th-text="${blog.id}"></td>
                     <td data-th-text="${blog.title}"></td>
                     <td data-th-text="${blog.stateType}"></td>
+                    <td><a data-th-href="@{/blogs/edit/{id}(id=${blog.id})}">edit</a></td>
+                    <td>
+                        <form data-th-object="${blog}" data-th-action="@{/blogs/{id}(id=${blog.id})}" data-th-method="delete">
+                            <input type="submit" value="delete" />
+                            </form>
+                    </td>
                 </tr>
             </table>
         </div>
