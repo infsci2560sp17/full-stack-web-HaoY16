@@ -138,7 +138,6 @@
             <plugin>
                 <groupId>com.cj.jshintmojo</groupId>
                 <artifactId>jshint-maven-plugin</artifactId>
-                <version>2.4.3</version>
                 <executions>
                     <execution>
                         <goals>
