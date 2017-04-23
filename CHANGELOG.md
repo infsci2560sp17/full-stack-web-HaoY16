@@ -7,6 +7,32 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ### Added
 - TBD.
 
+## [v1.5] - 2017-04-20
+### Updated
+- Home page
+- Login page
+### Deleted
+- All test/java
+
+
+## [v1.4] - 2017-03-25
+### Added
+- Create 4 additional Entities 
+- Create 4 additional Repositories
+- Create 4 additional RESTful services that return JSON
+- Create 4 additional MVC controllers
+- Create 4 additional MVC pages
+
+## [v1.3] - 2017-02-19
+### Added
+- Create an Entity
+- Create a Repository
+- Create a RESTful web service and return JSON
+- Create a MVC Controller and implement get and post methods
+- Create a MVC Page and wire it to your Repository
+    - GET return a list of blogs
+    - POST add a new blog
+    
 ## [v1.2] - 2017-01-28
 ### Added
 - Answered in README.md
