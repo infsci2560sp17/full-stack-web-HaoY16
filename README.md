@@ -34,8 +34,7 @@ https://radiant-mesa-88066.herokuapp.com/
 TODO : Please list key features of your project.
 
 * File Upload
-* Key Feature 2
-* Key Feature N
+* Blog Search 
 
 ## Project Details
 
